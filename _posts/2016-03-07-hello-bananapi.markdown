@@ -14,4 +14,4 @@ tags:
 
 ## 前言
 
-Hello BananaPi 11111
+Hello BananaPi HAHA
