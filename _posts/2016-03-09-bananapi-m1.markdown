@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "BananaPi M1"
+subtitle:   " \"BananaPi M1\""
+date:       2016-03-09 11:00:00
+author:     "Snowtank"
+tags:
+    - BananaPi M1
+---
+
+> 先从BananaPi M1 开始
+
+
+## 前言
+
+![img](/img/in-post/m1.png)
