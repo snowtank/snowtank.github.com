@@ -1,66 +1,77 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- Known Issue, found by Hux:
-            <nav>'s height woule be hold on by its content.
-            so, when navbar scale out, the <nav> will cover tags.
-            also mask any touch event of tags, unfortunately.
-        -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{ site.baseurl }}/">Home</a>
-                    </li>
-                    {% for page in site.pages %}{% if page.title %}
-                    <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </li>
-                    {% endif %}{% endfor %}
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+  		<ul id="dropdown1" class="dropdown-content">
+       
+        <li><a class="waves-effect waves grey-text" href="https://github.com/bpi-sinovoip" target="_blank">Github</a></li>
+ 		<li><a class="waves-effect waves grey-text" href="https://www.gitbook.com/@bananapi/" target="_blank">GitBook</a></li>
+         <li><a class="waves-effect waves grey-text" href="https://en.wikipedia.org/wiki/Banana_Pi" target="_blank">Wiki</a></li>
+		</ul>    
+        <ul id="dropdown3" class="dropdown-content">
+        <li><a class="waves-effect waves grey-text" href="product.html">Banana Pi</a></li>
+        <li><a class="waves-effect waves grey-text" href="product-iot-all.html">BPI IoT</a></li>
+ 		<li><a class="waves-effect waves grey-text" href="product-bpi-4.html">BPI ODM&amp;OEM</a></li>
+		</ul>   
+    <div class="nav-wrapper">
+      <a id="logo-container" href="index.html" style="margin-left:15px;" class="brand-logo  black-text"><img style="max-height:55px; margin-top:10px;" src="images/logos/company-logo/logo-home.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button waves-effect waves-light black-text" href="#!" data-activates="dropdown1"><hnav>RESOURCE</hnav></a></li>
+        <li><a class="waves-effect waves-light black-text" href="http://forum.banana-pi.org/"><hnav>FORUM</hnav></a></li>
+        <li><a class="waves-effect waves-light black-text" href="blog.html"><hnav>BLOG</hnav></a></li>
+        <li><a class="waves-effect waves-light black-text" href="download.html"><hnav>DOWNLOAD</hnav></a></li>
+        <li><a class="dropdown-button waves-effect waves-light black-text" href="#£¡" data-activates="dropdown3"><hnav>BPI Product</hnav></a></li>
+        <a class="waves-effect waves-light btn" style=" margin-right:15px; margin-left:5px; height:40px;" href="shop.html">SHOP</a>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a class="waves-effect waves-blue" href="index.html">HOME</a></li>
+        <li><a class="waves-effect waves-blue" href="http://forum.banana-pi.org/">FORUM</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header  waves-effect waves-blue">BANANA PI &#8594;</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                	<li><a class="waves-effect waves-blue grey-text" href="m3.html">M3</a></li>
+                	<li><a class="waves-effect waves-blue grey-text" href="m2.html">M2</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="m1plus.html">M1+</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="m1.html">M1</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="r1.html">R1</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="d1.html">D1</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="g1.html">G1</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="http://www.banana-pi.com/eacpzs.asp?dlb_id=4">G1</a></li>
                 </ul>
-            </div>
-        </div>
-        <!-- /.navbar-collapse -->
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-blue">DOWNLOAD &#8594;</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                	<li><a class="waves-effect waves-blue grey-text" href="m3-download.html">M3 Download</a></li>
+                	<li><a class="waves-effect waves-blue grey-text" href="m2-download.html">M2 Download</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="m1plus-download.html">M1+ Download</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="m1-download.html">M1 Download</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="r1-download.html">R1 Download</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="d1-download.html">D1 Download</a></li>
+                    <li><a class="waves-effect waves-blue grey-text" href="g1-download.html">G1 Download</a></li>
+                    
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a class="waves-effect waves-blue" href="product-iot-all.html">IoT</a></li>
+        <li><a class="waves-effect waves-blue" href="product-bpi-4.html">BPI4 OEM&amp;ODM</a></li>
+        <li><a class="waves-effect waves-blue" href="blog.html">BLOG</a></li>
+        <li><a class="waves-effect waves-blue" href="https://en.wikipedia.org/wiki/Banana_Pi" target="_blank">WIKI</a></li>
+        
+        <li><a class="waves-effect waves-blue" href="https://github.com/bpi-sinovoip" target="_blank">GITHUB</a></li>
+        <li><a class="waves-effect waves-blue" href="https://www.gitbook.com/@bananapi/" target="_blank">GITBOOK</a></li>
+        <li><a class="waves-effect waves-blue" href="shop.html">SHOP</a></li>
+                
+        <li><a class="waves-effect waves-blue" href="http://forum.banana-pi.org">Forum</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
-    <!-- /.container -->
-</nav>
-<script>
-    // Drop Bootstarp low-performance Navbar
-    // Use customize navbar with high-quality material design animation
-    // in high-perf jank-free CSS3 implementation
-    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
-
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        // CLOSE
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        // OPEN
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
-</script>
+  </nav>
+  </div>
